@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
 * {
   margin: 0;
   padding: 0;
@@ -237,67 +238,9 @@ button {
   font-family: "Poppins", sans-serif;
 }
 
-.main {
-  width: 100%;
-  height: 100%;
-  padding-top: 30px;
-}
-.main-banner-trusdet {
-  display: flex;
-}
-.main-banner-trusdet-text {
-  width: 600px;
-  padding-left: 70px;
-  margin-top: 70px;
-}
-.main-banner-trusdet-text-h1-section {
-  width: 300px;
-}
-.main-banner-trusdet-text-paragraph-section {
-  width: 500px;
-  margin-top: 25px;
-}
-.main-banner-organic {
-  display: flex;
-  padding-left: 70px;
-  padding-top: 30px;
-  background-color: #f7f7f7;
-}
-.main-banner-organic-img {
-  background-image: url(/images/banner-organic.jpg);
-}
-.main-banner-organic-text {
-  width: 600px;
-  padding-left: 70px;
-}
-.main-banner-organic-text-h1-section {
-  width: 300px;
-}
-.main-banner-organic-text-paragraph-section {
-  width: 500px;
-  margin-top: 25px;
-}
-.main-banner-organic-ctrl {
-  display: flex;
-  margin-top: 24px;
-}
-.main-banner-organic-ctrl-text {
-  margin-top: 10px;
-  margin-left: 10px;
-}
-.main-banner-organic-ctrl-text-latty {
-  font-weight: 600;
-}
-.main-banner-organic-ctrl-text-paragraph {
-  font-size: 11px;
-  margin-top: 10px;
-}
-.main-banner-organic-wrapper-ctrl {
-  display: flex;
-}
-
 .footer_row {
-  margin-top: 225px;
+  margin-top: 50px;
+
 }
 .footer_top {
   display: flex;
@@ -585,4 +528,711 @@ button {
   color: #FFFFFF;
   font-size: 8px;
   font-weight: 400;
+}
+
+.main {
+  flex: 1 1 auto;
+}
+
+.title {
+  font-family: "Poppins", sans-serif;
+  font-size: 32px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+
+.menus {
+  width: 100%;
+  display: flex;
+  gap: 12px;
+}
+.menus-shopping-card {
+  width: 872px;
+  border-radius: 8px;
+  height: 311px;
+  border: 1px solid #E6E6E6;
+  display: flex;
+  flex-direction: column;
+}
+.menus-card-total {
+  width: 424px;
+  height: 266px;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.shopping-card__rows {
+  display: block;
+}
+.shopping-card__rows_row-1 {
+  display: flex;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  height: 35px;
+  padding-left: 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+.shopping-card__rows_row-1_titles-1 {
+  display: block;
+}
+.shopping-card__rows_row-1_titles-1_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 14px;
+  color: #808080;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: left;
+}
+.shopping-card__rows_row-1_titles-2 {
+  display: flex;
+}
+.shopping-card__rows_row-1_titles-2_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-right: 118px;
+  line-height: 14px;
+  letter-spacing: 0.03em;
+  color: #808080;
+  text-align: left;
+}
+.shopping-card__rows_row-2 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  height: 100px;
+}
+.shopping-card__rows_row-2_Product {
+  display: flex;
+}
+.shopping-card__rows_row-2_Product_images_img {
+  width: 100px;
+  height: 99px;
+}
+.shopping-card__rows_row-2_Product_title {
+  display: flex;
+  align-items: center;
+}
+.shopping-card__rows_row-2_Product_title_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.shopping-card__rows_row-2_Price {
+  display: block;
+  align-self: center;
+}
+.shopping-card__rows_row-2_Price_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.shopping-card__rows_row-2_Quantity {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.shopping-card__rows_row-2_Quantity_Quantity {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-radius: 25px;
+  padding: 8px;
+  border: 1px solid #E6E6E6;
+}
+.shopping-card__rows_row-2_Quantity_Quantity_minus {
+  display: flex;
+  align-items: center;
+}
+.shopping-card__rows_row-2_Quantity_Quantity_minus_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 50px;
+  width: 30px;
+  height: 30px;
+  font-weight: bold;
+  transition: 0.2s;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(180deg, rgb(245, 245, 245), rgb(204, 204, 204));
+}
+.shopping-card__rows_row-2_Quantity_Quantity_minus_btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+}
+.shopping-card__rows_row-2_Quantity_Quantity_title {
+  display: block;
+}
+.shopping-card__rows_row-2_Quantity_Quantity_title_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.shopping-card__rows_row-2_Close {
+  display: flex;
+  align-items: center;
+}
+.shopping-card__rows_row-2_Close_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 50px;
+  width: 20px;
+  height: 20px;
+  font-weight: bold;
+  transition: 0.2s all ease-in-out;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.5);
+}
+.shopping-card__rows_row-2_Close_btn:hover {
+  transform: translateY(2px);
+  box-shadow: 0 0 rgba(0, 0, 0, 0);
+  background: #f7f7f7;
+}
+.shopping-card__rows_row-3 {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 8px;
+  border-radius: 8px 8px 0 0;
+  border-bottom: 1px solid #E6E6E6;
+  width: 100%;
+  height: 100px;
+}
+.shopping-card__rows_row-4 {
+  display: block;
+  padding: 18px;
+}
+.shopping-card__rows_row-4_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.shopping-card__rows_row-4_buttons_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: #4D4D4D;
+  font-size: 14px;
+  border-radius: 25px;
+  width: 150px;
+  font-weight: 600;
+  line-height: 16.8px;
+  cursor: pointer;
+  height: 40px;
+  border-bottom: 4px solid #858985;
+  transition: 0.1s;
+  background-color: #F2F2F2;
+}
+.shopping-card__rows_row-4_buttons_btn:hover {
+  border-bottom-width: 0px;
+  transform: translateY(1px);
+}
+
+.card-total {
+  display: block;
+  padding: 20px;
+}
+.card-total__title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.card-total__info {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.card-total__info_Subtotal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0 12px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+.card-total__info_Subtotal_left {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #4D4D4D;
+  text-align: left;
+}
+.card-total__info_Subtotal_rigth {
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.card-total__info_Shipping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0 12px 0;
+  border-bottom: 1px solid #E6E6E6;
+}
+.card-total__info_Shipping_left {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #4D4D4D;
+  text-align: left;
+}
+.card-total__info_Shipping_rigth {
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.card-total__info_Total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 0 18px 0;
+  margin: 0 0 12px 0;
+}
+.card-total__info_Total_left {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  color: #4D4D4D;
+  text-align: left;
+}
+.card-total__info_Total_rigth {
+  color: #1A1A1A;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.card-total__buttons_btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  border-radius: 43px;
+  width: 376px;
+  height: 51px;
+  font-weight: 500;
+  transition: 0.2s;
+  opacity: 1;
+  background-color: #00B207;
+}
+.card-total__buttons_btn:hover {
+  opacity: 0.7;
+}
+
+.coupon__code {
+  width: 872px;
+  height: 91px;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 28px;
+  padding: 20px;
+}
+.coupon__code_title {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.coupon__code_buttons {
+  display: flex;
+  align-items: center;
+  width: 668px;
+  height: 52px;
+  border: 1px;
+  position: relative;
+}
+.coupon__code_buttons_input {
+  outline: none;
+  width: 653px;
+  height: 52px;
+  top: 20px;
+  left: 184px;
+  padding: 14px, 24px;
+  border-radius: 46px;
+  border: 1px;
+  gap: 10px;
+  border: 1px solid #E6E6E6;
+  font-size: 16px;
+}
+.coupon__code_buttons_input {
+  padding-left: 20px;
+}
+.coupon__code_buttons_btn {
+  width: 196px;
+  height: 52px;
+  position: absolute;
+  top: 0px;
+  left: 456px;
+  padding: 16px, 40px, 16px, 40px;
+  border-radius: 43px;
+  gap: 16px;
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+  background: #000;
+}
+.coupon__code_buttons_btn:hover {
+  opacity: 0.7;
+}
+
+.menus__CheckoutPage {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  gap: 12px;
+}
+.menus__CheckoutPage__Informations {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.menus__CheckoutPage__Informations_Billing-Info {
+  display: block;
+}
+.menus__CheckoutPage__Informations_Billing-Info_title {
+  margin-bottom: 20px;
+  display: block;
+}
+.menus__CheckoutPage__Informations_Billing-Info_title_text {
+  display: block;
+  font-family: "Poppins", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 36px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 0 0 20px 0;
+  justify-content: space-between;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1_First-name {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1_First-name_title {
+  display: block;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1_First-name_title_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1_First-name_inputs {
+  display: block;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1_First-name_inputs_input {
+  width: 264px;
+  height: 49px;
+  padding: 14px, 142px, 14px, 16px;
+  border-radius: 6px;
+  border: 1px solid #E6E6E6;
+  padding: 12px;
+  outline: none;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1_Last-name {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1_Company-name {
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1_Company-name_title {
+  width: 190.35px;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1_Company-name_title_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-1_Company-name_title_text_span {
+  color: gray;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-3 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 0 0;
+  justify-content: space-between;
+}
+.menus__CheckoutPage__Informations_Billing-Info_section-2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 20px 0 20px 0;
+  justify-content: space-between;
+}
+.menus__CheckoutPage__Informations_Billing-Info_checkbox {
+  display: flex;
+  gap: 4px;
+  width: 864px;
+  padding-bottom: 20px;
+  margin-bottom: -20px;
+  border-bottom: 1px solid #E6E6E6;
+}
+.menus__CheckoutPage__Informations_Billing-Info_checkbox_input {
+  cursor: pointer;
+}
+.menus__CheckoutPage__Informations_Billing-Info_checkbox_label {
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menus__CheckoutPage__Informations_Additional-Info {
+  display: block;
+}
+.menus__CheckoutPage__Order-Summery {
+  width: 424px;
+  height: 580px;
+  padding: 20px;
+  gap: 24px;
+  margin-top: 15px;
+  border: 1px solid #E6E6E6;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery {
+  display: flex;
+  flex-direction: column;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_title {
+  display: block;
+  margin-bottom: 20px;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_title_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Product {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Product_green-Bulgarian {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Product_green-Bulgarian_images {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Product_green-Bulgarian_images_img {
+  width: 60px;
+  height: 60px;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Product_green-Bulgarian_images_text {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Product_green-Bulgarian_images_text_span {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Product_green-Bulgarian_images_text-1 {
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #4d4d4d;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Product_green-Bulgarian_price {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Product_red-Bulgarian {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0px 10px 10px;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_Total:not(:last-child) {
+  border-bottom: 1px solid #E6E6E6;
+}
+.menus__CheckoutPage__Order-Summery_Payment-Method {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.menus__CheckoutPage__Order-Summery_Payment-Method {
+  text-align: left;
+}
+
+.textarea {
+  outline: none;
+  border-radius: 6px;
+  border: 1px solid #E6E6E6;
+  font-size: 16px;
+  padding: 16px;
+  outline: none;
+  resize: none;
+}
+.textarea::placeholder {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+  transition: all 0.2 ease-in-out;
+}
+.textarea:hover {
+  cursor: pointer;
+}
+.textarea:focus {
+  cursor: text;
+  border: 1px solid #333;
+}
+
+.menus__CheckoutPage__Order-Summery_Order-Summery_radio {
+  display: block;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_radio_radios {
+  display: flex;
+  gap: 8px;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_radio_radios:not(:last-child) {
+  margin-bottom: 10px;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_radio_radios_input {
+  width: 20px;
+  height: 20px;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_radio_radios_input::after {
+  background: #00B207;
+}
+.menus__CheckoutPage__Order-Summery_Order-Summery_radio_radios_label {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.menus__CheckoutPage__Order-Summery_buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.menus__CheckoutPage__Order-Summery_buttons_btn {
+  width: 376px;
+  height: 51px;
+  padding: 16px, 40px, 16px, 40px;
+  border-radius: 43px;
+  gap: 16px;
+  background: #00B207;
+  font-family: "Poppins", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  opacity: 1;
+  transition: all 0.2s ease-in-out;
+}
+.menus__CheckoutPage__Order-Summery_buttons_btn:hover {
+  opacity: 0.7;
 }/*# sourceMappingURL=main.css.map */

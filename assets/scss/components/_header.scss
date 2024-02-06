@@ -1,2 +1,212 @@
 
+.header{
+
+    &-block-one{
+      width: 100%;
+      height: 45px;
+      background-color: #1A1A1A;
+    }
+    &_top{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &_loc{
+      display: flex;
+      align-items: center;
+      padding: 10px 0;
+      gap: 7px;
+  
+      &-title{
+        font-size: 16px;
+        color: #B3B3B3;
+      }
+    }
+    &_sign{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+  
+      &-eng{
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+        &-tite{
+          font-size: 16px;
+          color:#B3B3B3;
+          &:hover{
+            color: green;
+          }
+        }
+        &:hover path{
+          fill: green;
+        }
+      } 
+      &-usd{
+        display: flex;
+        align-items: center;
+        border-right: 1px solid #B3B3B3;
+        padding: 0 10px;
+        cursor: pointer;
+        &:hover path{
+          fill: green;
+        }
+        
+      }
+      &-signin{
+        display: flex;
+        align-items: center;
+        gap: 12px;
+         
+        &-button{
+           font-size: 16px;
+           color:#B3B3B3;
+           &:hover{
+            color: green;
+          }
+        }
+      }
+    }
+  
+    &_center{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      height: 93px;
+      padding: 30px 0;
+    }
+    &_logo{
+      display: flex;
+      align-items: center;
+      gap: 12px;
+  
+      &-title{
+        font-weight: 500;
+      }
+    }
+    &-email{
+      display: flex;
+    }
+    &_email{
+      width: 400px;
+      height: 45px;
+      display: flex;
+      align-items: center;
+      padding: 10px 20px;
+      border-radius: 10px 0 0 10px;
+      border: 1px solid #E6E6E6;
+      justify-content: space-between;
+  
+      &-btn{
+        display:flex;
+        align-items: center;
+        padding: 10px 0;
+        gap: 8px;
+      }
+      &-input{
+        background-color: transparent;
+        border: none;
+        font-family: inherit;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        color: #39425D;
+        font-family: "Montserrat", sans-serif;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 10px 16px;
+        transition: all 0.2s ease-in-out;
+    }
+    &-btn2{
+      width: 98px;
+      height: 45px;
+      background-color: green;
+      color: #fff;
+      border-radius: 0 10px 10px 0;
+    }
+  }
+      &_form{
+        display: flex;
+        align-items: center;
+      }
+  
+      &_shop{
+        display: flex;
+        align-items: center;
+        gap: 16px;
+        &-sub1{
+          font-size: 11px;
+          color:#4D4D4D;
+        }
+        &-sub2{
+          font-size: 16px;
+          color: black;
+        }
+      }
+  
+      &_button{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        padding: 20px 0;
+  
+        &-navbar{
+          display: flex;
+          align-items: center;  
+          gap: 32px;
+        }
+  
+        &-link{
+          display: flex;
+          align-items: center;
+          color:#666666;
+          font-size: 14px;
+          font-weight: 500;
+  
+          &:hover{
+            color: green;
+          }
+          &:hover path{
+            fill: green;
+          }
+        }
+        &-call{
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          font-size: 14px;
+          font-weight: 500;
+          color: #1A1A1A;
+        }
+      }
+  
+      &-block-four{
+        width: 100%;
+        margin-top: 10px;
+        position: relative;
+        
+        img{
+          width: 100%;  
+           
+          
+        }
+        &-home{
+          position: absolute;
+          top: 70px;
+          display: flex;
+          align-items: center;
+          gap: 12px;
+          color: #00B207;
+          font-size: 16px;
+          font-weight: 400;
+          font-family: 'Poppins' , sans-serif;
+        }
+      }
+  }
+
   
