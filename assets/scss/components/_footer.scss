@@ -1,7 +1,9 @@
 .footer{
-   
+ 
+    &_row{
+        margin-top: 50px;
 
-
+    }
     &_top{
         display: flex;
         align-items: center;
