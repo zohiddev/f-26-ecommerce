@@ -31,7 +31,7 @@ button {
 
 .container {
   width: 100%;
-  max-width: 1400px;
+  max-width: 1320px;
   padding: 0 20px;
   margin: 0 auto;
 }
@@ -240,6 +240,7 @@ button {
 
 .footer_row {
   margin-top: 50px;
+
 }
 .footer_top {
   display: flex;
