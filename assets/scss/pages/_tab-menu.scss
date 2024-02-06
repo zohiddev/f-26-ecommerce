@@ -1,0 +1,182 @@
+.tab-menu{
+    // &-wrap{
+    //   margin: 60px 0;
+    // }
+
+    &_head{
+      @include flex(center,center);
+      gap: 20px;
+      border-bottom: 0.1px solid $green-color;
+  
+      &-button{
+        padding: 16px;
+        border-bottom: 1px solid transparent;
+  
+        &.active{
+          border-bottom: 1px solid $green-color;
+          color: $black-color;
+        }
+      }
+    }
+  
+    & .body{
+      @include flex();
+      gap: 130px;
+      padding-top: 32px;
+      opacity: 1;
+      visibility: visible;
+  
+      &.active{
+        opacity: 0;
+        visibility: hidden;
+      }
+  
+      &-left{
+        @include flex();
+        flex-direction: column;
+        gap: 20px;
+  
+        &_feature{
+          @include flex();
+          flex-direction: column;
+          gap: 10px;
+          &_card{
+            @include flex();
+            gap: 5px;
+  
+          }
+          &_title{
+            color: $gray-white-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 19.6px;
+          }
+  
+        }
+  
+        &_description{
+          color: $gray-white-color;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+        }
+  
+        &_subtitle{
+          color: $gray-white-color;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+        }
+  
+        &_nexttitle{
+          color: $gray-white-color;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 21px;
+        }
+      }
+  
+      &-left2{
+        @include flex();
+        gap: 30px;
+  
+        &_col{
+          @include flex();
+          flex-direction: column;
+          gap: 12px;
+
+          &_title{
+            color: $black-scale-color;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+          }
+  
+          &_subtitle{
+            color: $text-gray-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+          }
+          &_link{
+            color: $text-gray-color;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 21px;
+  
+            &:hover{
+              text-decoration: underline;
+              color: $black-scale-color;
+            }
+  
+            &.black{
+              text-decoration: underline;
+              color: $black-scale-color;
+  
+              &:hover{
+                text-decoration: none;
+                color: $text-gray-color;
+              }
+            }
+          }
+        }
+      }
+  
+      &-right{
+        position: relative;
+  
+        &_player{
+          position: relative;
+          @include flex(center,center);
+        }
+  
+        &_btn{
+          position: absolute;
+          // top: 35%;
+          // left: 44%;
+          border-radius: 50%;
+          background-color: $branding-green-color;
+          padding: 20px 25px;
+        }
+  
+        &_content{
+          @include flex();
+          gap: 22px;
+          padding: 20px;
+          border: 1px solid $border-gray-color;
+          margin-top: 20px;
+        }
+  
+        &_card{
+          @include flex();
+          gap: 12px;
+  
+          &_title{
+            color: $black-scale-color;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 21px;
+          }
+          &_subtitle{
+            color: $gray-white-color;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 19.5px;
+          }
+        }
+      }
+    }
+  
+    & .body2{
+      @include flex();
+      gap: 270px;
+      padding-top: 32px;
+      // opacity: 0;
+      // visibility: hidden;
+  
+      &.active{
+        opacity: 1;
+        visibility: visible;
+      }
+    }
+  }
