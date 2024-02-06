@@ -1,0 +1,377 @@
+.product{
+    margin-top: 40px;
+
+    &-row{
+        @include flex();
+        gap: 20px;
+    }
+
+    &-left{
+        @include flex();
+        gap: 15px;
+
+        & .row{
+            @include flex();
+            flex-direction: column;
+            gap: 18px;
+
+            &_button:not(:last-child){
+                margin-bottom: 24px;
+            }
+            &_button:not(:first-child){
+                margin-top: 24px;
+            }
+
+            &-content{
+                border: 2px solid transparent;
+                @include trn();
+            }
+
+            &-content:hover{
+                border: 2px solid $green-color;
+            }
+
+            &-content.active{
+                border: 2px solid $green-color;
+            }
+        }
+    }
+
+    &-right{
+        width: 100%;
+
+        & .head{
+            @include flex();
+            flex-direction: column;
+            padding-bottom: 20px;
+            border-bottom: 2px solid $border-gray-color;
+
+            &-stock{
+                @include flex(center);
+                gap: 10px;
+
+                &__title{
+                    font-family: $poppins;
+                    font-weight: 600;
+                    font-size: 36px;
+                    line-height: 43.2px;
+                }
+
+                &__btn{
+                    background-color: $deep-green-color;
+                    padding: 6px 10px;
+                    border-radius: 5px;
+                    @include trn();
+
+                    &:hover{
+                        color: $white-color;
+                        background-color: $green-color;
+                    }
+                }
+            }
+
+            &-rating{
+                @include flex(center);
+                gap: 6px;
+
+                &_subtitle{
+                    color: $text-gray-color;
+                    font-family: $poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                }
+
+                &_sku{
+                    color: $text-black-color;
+                    font-family: $poppins;
+                    font-size: 14px;
+                    font-weight: 600;
+                    line-height: 21px;
+                }
+
+                &_sku.num{
+                    color: $text-gray-color;
+                    font-weight: 300;
+                }
+            }
+
+            &-price{
+                @include flex(center);
+                gap: 5px;
+
+                &__sale{
+                    color: $gray-color;
+                    font-family: $poppins;
+                    font-size: 20px;
+                    font-weight: 400;
+                    line-height: 30px;
+                    text-decoration: line-through;
+                }
+
+                &__number{
+                    color: $number-green-color;
+                    font-family: $poppins;
+                    font-size: 24px;
+                    font-weight: 500;
+                    line-height: 36px;
+                }
+
+                &__btn{
+                    padding: 3px 10px 3px 10px;
+                    border-radius: 30px;
+                    background-color: $red-color;
+                    color: $text-red-color;
+                    font-family: $poppins;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 21px;
+                }
+            }
+        }
+
+        & .body{
+            @include flex();
+            flex-direction: column;
+            gap: 16px;
+            padding: 24px 0;
+            border-bottom: 2px solid $border-gray-color;
+            
+            &-row{
+                @include flex(center, space-between);
+            }
+
+            &-brand{
+                @include flex(center);
+                gap: 5px;
+
+                &__title{
+                    color: $black-scale-color;
+                    font-family: $poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                }
+            }
+
+            &-social{
+                @include flex(center);
+                gap: 5px;
+
+
+                &__title{
+                    color: $black-scale-color;
+                    font-family: $poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px;
+                    margin-right: 10px;
+                }
+
+                &_links{
+                    @include flex(center,center);
+                    background-color: $white-color;
+                    padding: 10px;
+                    border-radius: 50%;
+                    @include trn();
+
+                    &:hover{
+                        background-color: $branding-green-color;
+                        border-radius: 50%;
+                        svg{
+                            path{
+                                fill: $white-color;
+                            }
+                        }
+                    }
+
+                    &.active{
+                        background-color: $branding-green-color;
+                        border-radius: 50%;
+                        svg{
+                            path{
+                                fill: $white-color;
+                            }
+                        }
+                    }
+                }
+
+                &_links.fc{
+                    @include flex(center,center);
+                    background-color: $branding-green-color;
+                    border-radius: 50%;
+                    padding: 10px;
+                    @include trn();
+
+
+                    &:hover{
+                        background-color: $white-color;
+                        border-radius: 50%;
+                        svg{
+                            path{
+                                fill: $black-scale-color;
+                            }
+                        }
+                    }
+
+                    &.active{
+                        background-color: $white-color;
+                        border-radius: 50%;
+                        @include trn();
+                        
+
+                        svg{
+                            path{
+                                fill: $black-scale-color;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-description{
+                width: 80%;
+            }
+        }
+
+        & .bottom{
+            
+            &-btn_section{
+                padding: 18px 0;
+                @include flex();
+                gap: 12px;
+                border-bottom: 2px solid $border-gray-color;
+            }
+
+            &_quantity{
+                width: 124px;
+                @include flex(center);
+                gap: 10px;
+                border-radius: 170px;
+                border: 1px solid $border-gray-color;
+                padding: 8px;
+
+                &_btn{
+                    width: 34px;
+                    height: 34px;
+                    background-color: $whete-color;
+                    border-radius: 170px;
+                    @include flex(center,center);
+                }
+
+                &_num{
+                    color: $black-scale-color;
+                    font-family: $poppins;
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                }
+            }
+
+            &_btn{
+                width: 100%;
+                @include flex(center,center);
+                gap: 16px;
+                padding: 16px 40px 16px 40px;
+                background-color: $branding-green-color;
+                border-radius: 43px;
+                color: $white-color;
+                font-family: $poppins;
+                font-size: 16px;
+                font-weight: 600;
+                line-height: 19.2px;
+
+                &:hover{
+                    background-color: $white-color;
+                    color: $branding-green-color;
+                    @include trn();
+
+                    svg{
+                        path{
+                            stroke: $branding-green-color;
+                        }
+                    }
+                }
+            }
+
+            &_wishlist{
+                @include flex(center,center);
+                padding: 16px;
+                background-color: #20B5261A;
+                border-radius: 43px;
+                @include trn();
+
+                &:hover{
+                    background-color: $branding-green-color;
+
+                    svg{
+                        path{
+                            stroke: $white-color;
+                        }
+                    }
+                }
+            }
+
+            &_categories{
+                padding: 24px 0;
+                @include flex();
+                flex-direction: column;
+                gap: 12px;
+
+
+                &_titles{
+                    @include flex();
+                    gap: 6px;
+                }
+
+                &_title{
+                    color: $black-scale-color;
+                    font-family: $poppins;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 21px;
+
+                    &.gray{
+                        color: $gray-white-color;
+                        font-weight: 400;
+                    }
+                }
+
+                &_tags{
+                    @include flex();
+                    gap: 6px;
+                }
+
+                &_tag{
+                    color: $black-scale-color;
+                    font-family: $poppins;
+                    font-size: 14px;
+                    font-weight: 500;
+                    line-height: 21px; 
+                }
+
+                &_link{
+                    color: $gray-white-color;
+                    font-family: $poppins;
+                    font-size: 14px;
+                    font-weight: 400;
+                    line-height: 21px; 
+
+                    &.black{
+                        color: $black-scale-color;
+                        text-decoration: underline;
+                        font-weight: 500;
+                    }
+
+                    &:hover{
+                        color: $black-scale-color;
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+
+
+}
